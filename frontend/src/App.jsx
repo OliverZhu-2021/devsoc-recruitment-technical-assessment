@@ -7,7 +7,6 @@ const Container = styled.div`
   width: 100vw;
   min-height: 100vh;
   position: relative;
-  background: blue;
 `;
 
 function App() {
