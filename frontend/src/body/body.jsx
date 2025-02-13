@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Search from "./search";
+import Main from "./main";
 
 const BodyWrapper = styled.div`
   height: calc(100vh - 60px);
@@ -14,6 +15,7 @@ const Body = () => {
   return(
     <BodyWrapper>
       <Search />
+      <Main />
     </BodyWrapper>
   )
 };
