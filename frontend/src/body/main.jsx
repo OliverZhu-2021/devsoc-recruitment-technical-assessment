@@ -10,6 +10,10 @@ const MainContainer = styled.div`
   justify-content: center;
   padding: 0 20px 10px 20px;
   position: relative;
+
+  @media(max-width: 594px) {
+    position: relative;
+  }
 `;
 
 const Main = () => {

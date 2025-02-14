@@ -10,6 +10,11 @@ const SearchContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media (max-width: 594px) {
+    height: 102px;
+    flex-shrink: 0;
+  }
 `;
 
 const FiltersWrapper = styled.div`
@@ -31,6 +36,13 @@ const FiltersWrapper = styled.div`
     font-weight: bold;
     padding-top: 6px;
     margin-left: 4px;
+  }
+
+  @media (max-width: 594px) {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    margin: 0 0 0 20px;
   }
 `;
 
@@ -54,13 +66,20 @@ const FilterListWrapper = styled.div`
     padding-top: 6px;
     margin-left: 4px;
   }
+
+  @media (max-width: 594px) {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    margin: 0 20px 0 0;
+  }
 `;
 
 const SearchBar = styled.div`
   display: flex;
   align-items: center;
   height: 36px;
-  width: 540px;
+  width: 520px;
   border-radius: 4px;
   border: 2px solid #cccccc;
   img {
@@ -68,6 +87,17 @@ const SearchBar = styled.div`
   }
   span {
     color: #d4d4d4;
+  }
+
+  @media (max-width: 768px) {
+    width: 320px;
+  }
+
+  @media (max-width: 594px) {
+    position: absolute;
+    top: 10px;
+    margin: 0 20px;
+    width: calc(100% - 40px);
   }
 `;
 
