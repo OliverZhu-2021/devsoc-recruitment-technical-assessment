@@ -101,6 +101,10 @@ const SearchBar = styled.div`
   }
 `;
 
+/**
+ * The search component
+ * @returns A search section that contains the search bar and 2 filter buttons
+ */
 const Search = () => {
   return(
     <SearchContainer>

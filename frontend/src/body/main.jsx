@@ -16,6 +16,10 @@ const MainContainer = styled.div`
   }
 `;
 
+/**
+ * The main section of the webpage
+ * @returns Building cards displayed in grid layout
+ */
 const Main = () => {
 
   console.log("Buildings: ", buildings);

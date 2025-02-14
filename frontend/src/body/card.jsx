@@ -99,6 +99,10 @@ const NameWrapper = styled.div`
   }
 `;
 
+/**
+ * A simple card component that displays building information.
+ * @returns A styled building card
+ */
 const Card = ({ numRooms, bgPic, name }) => {
   return(
     <CardWrapper>

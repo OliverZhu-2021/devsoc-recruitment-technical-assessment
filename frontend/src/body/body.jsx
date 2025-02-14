@@ -11,6 +11,10 @@ const BodyWrapper = styled.div`
   flex-direction: column;
 `;
 
+/**
+ * The body section of the webpage
+ * @returns A body component that contains search bar and grid cards
+ */
 const Body = () => {
   return(
     <BodyWrapper>

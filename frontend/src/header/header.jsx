@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import logo from '../../assets/freeRoomsLogo.png';
+import logoClose from '../../assets/freeroomsDoorClosed.png';
 import search from '../assets/search.svg';
 import gridView from '../assets/grid-view.svg';
 import map from '../assets/map.svg';
 import darkMode from '../assets/dark-mode.svg';
+import { useState } from 'react';
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -68,11 +70,26 @@ const IconBoxSelected = styled.div`
   }
 `;
 
+/**
+ * The header section of the page
+ * @returns A styled header section
+ */
+
 const Header = () => {
+
+  // State to track door open/close
+  const [openDoor, setOpenDoor] = useState(true);
+
   return(
     <HeaderWrapper>
-      <LogoWrapper>
-        <img src={logo} alt="logo" />
+      <LogoWrapper onClick={() => {setOpenDoor(!openDoor)}}>
+        {
+          openDoor
+          ?
+          <img src={logo} alt="logo" />
+          :
+          <img src={logoClose} alt="logo door close"/>
+        }
         <h3>Freerooms</h3>
       </LogoWrapper>
       <IconsWrapper>
