@@ -18,7 +18,7 @@ const FiltersWrapper = styled.div`
   border: 2px solid var(--orange);
   height: 36px;
   padding: 4px 18px 8px 12px;
-  margin-left: 20px;
+  margin: 12px 0 12px 20px;
   border-radius: 6px;
   img {
     width: 20px;
@@ -41,7 +41,7 @@ const FilterListWrapper = styled.div`
   height: 36px;
   padding: 4px 32px 8px 12px;
   border-radius: 6px;
-  margin-right: 20px;
+  margin: 12px 20px 12px 0;
   img {
     width: 20px;
     height: 20px;

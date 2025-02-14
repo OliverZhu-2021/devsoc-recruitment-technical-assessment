@@ -4,18 +4,25 @@ import Card from "./card";
 
 const MainContainer = styled.div`
   flex-grow: 1;
-  background: #dddddd
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  padding: 0 20px 10px 20px;
+  position: relative;
 `;
 
 const Main = () => {
 
   console.log("Buildings: ", buildings);
-  // For development
-  const agsm = buildings[0];
 
   return(
     <MainContainer>
-      <Card numRooms={agsm.rooms_available} bgPic={agsm.building_picture} name={agsm.name} />
+      {
+        buildings.map((building, idx) => (
+          <Card numRooms={building.rooms_available} bgPic={building.building_picture} name={building.name} key={idx}/>
+        ))
+      }
     </MainContainer>
   )
 };
